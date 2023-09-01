@@ -1,0 +1,35 @@
+.blogSection{
+  margin: 50px 0;
+  width: 100%;
+  height: 800px;
+  display: flex;
+  justify-content: center;
+}
+
+.blogArea{
+  width: 70%;
+  display: flex;
+  flex-flow: column;
+}
+
+.blogArea nav{
+  border: 2px solid  rgba(7, 45, 126, 0.05);
+  height: 50px;
+  width: 100%;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.blogContent{
+  border: 2px solid  rgba(7, 45, 126, 0.05);
+  height: 80%;
+  text-align: center;
+  padding: 150px 0;
+}
+
+.blogContent h1{
+  font-size: 36px;
+  line-height: 2;
+}
