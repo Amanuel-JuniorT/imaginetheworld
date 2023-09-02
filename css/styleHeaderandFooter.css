@@ -1,0 +1,148 @@
+@font-face {
+  font-family: 'Avenir LT Std 55 Roman';
+  font-size: small;
+  font-style: normal;
+  font-weight: lighter;
+  src: local('Avenir LT Std 55 Roman'), url('../fonts/AvenirLTStd-Light.woff') format('woff');
+}
+
+*{
+  font-family: 'Avenir LT Std 55 Roman';
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+a{
+  color: #fff;
+}
+
+body{
+  background-color: rgb(240, 244, 255);
+  position: relative;
+}
+
+
+
+.rightNavLists a:hover{
+  text-decoration: none;
+  color: rgba(64, 185, 255, 0.6);
+}
+
+header{
+  color: #fff;
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgb(11, 11, 51) 35%, rgb(7, 45, 126) 100%);
+  height: 100px;
+  width: 100%;
+}
+
+.leftHeader{
+  display: inline-block;
+  font-size: 36px;
+  line-height: 100px;
+  padding-left: 40px;
+}
+
+.rightNavLists{
+  float: right;
+  margin-right: 50px;
+}
+
+.rightNavLists li{
+  display: inline-block;
+  font-size: 20px;
+  line-height: 100px;
+  margin: 0 7px;
+}
+
+#sideBar{
+  display: none;
+  float: right;
+  font-size: 30px;
+  line-height: 135px;
+  padding-right: 30px;
+}
+
+#bar{
+  display: none;
+}
+
+/* 
+header nav{
+  padding: 0px 5%;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  font-size: larger;
+}
+.rightHeader{
+  width: 600px;
+  display: flex;
+  justify-content: space-between;
+  
+}
+.rightNavLists{
+  width: 100%;
+}
+.rightNavLists>ul{
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+.rightNavLists a{
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+
+.sideLists{
+  display: none;
+}
+
+#menuBar{
+  visibility: hidden;
+} */
+/* .menuBar>div{
+  width: 100%;
+  height: 2px;
+  background-color: #fff;
+
+} */
+
+/* .leftHeader>p{
+  font-size: 32px;
+} */
+
+
+/*---------------Footer------------*/
+
+
+/*------FOOTER----------------------*/
+
+footer{
+  background-color: #fff;
+  box-shadow: 0 1px 100px rgba(0, 0, 0, 0.23);
+  height: 200px;
+  width: 100%;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  justify-content: end;
+  margin-top: 50px;
+  /* position: absolute; */
+  /* bottom: 0; */
+}
+
+.footerContent{
+  height: 80%;
+  text-align: center;
+  line-height: 2;
+}
+
+.footerContent > p:first-child{
+  font-weight: bold;
+}
