@@ -200,4 +200,7 @@
     padding-top: 10px;
     font-size: 36px;
   }
+  .carouselBlocks{
+    height: 800px;
+  }
 }
