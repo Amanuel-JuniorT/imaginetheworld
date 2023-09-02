@@ -167,7 +167,9 @@
     padding-left: 45% !important;
   }
 
-  
+  .introSection{
+    height: 900px;
+  }
 }
 
 @media screen and (max-width: 767px) {
