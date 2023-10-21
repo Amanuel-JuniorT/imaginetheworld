@@ -271,20 +271,58 @@
   padding: 20px 0px;
 }
 
-.inputInfo input, .inputInfo select{
+.inputInfo input, .inputInfo select, .status{
   border: none;
   border-bottom: 2px solid rgb(11, 11, 51);
   width: 80%;
   font-size: 18px;
   padding-left: 5px;
+  height: 28px;
 }
 
-.inputInfo input:focus, .inputInfo select:focus{
+.inputInfo input:focus, 
+.inputInfo select:focus, 
+.status.active,
+.status.active + ul{
   outline: none;
   transform: scale(1.05);
   font-size: 20px;
 
 }
+
+.status.active + ul{
+  display: block;
+}
+
+.status{
+  text-transform: uppercase;
+  font-size: 20px;
+  letter-spacing: 1px;
+  position: relative;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2px 0 2px 5px;
+}
+
+.status + ul {
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  border: 1px solid black;
+  border-radius: 5px;
+  overflow: hidden;
+}
+.dep{
+  padding: 10px;
+}
+.dep:hover{
+  background-color: rgb(51, 51, 162);
+  color: #fff;
+  cursor: pointer;
+}
+
 
 input[type="text"]{
   text-transform: capitalize;
