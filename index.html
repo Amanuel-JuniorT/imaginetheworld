@@ -243,17 +243,7 @@
             <input type="file" name="id" accept="application/pdf">
           </div>
         </div>
-        <input type="submit" onclick="Email.send({
-          Host : "smtp.elasticemail.com",
-          Username : "username",
-          Password : "password",
-          To : 'amanueltzb@gmail.com',
-          From : "you@isp.com",
-          Subject : "This is the subject",
-          Body : "And this is the body"
-        }).then(
-        message => alert(message)
-          );">
+        <input type="submit" onclick="send()">
       </div>
     </section>
   </main>
@@ -271,6 +261,19 @@
     <script src="https://smtpjs.com/v3/smtp.js"></script>
     <script>
       
+      function send(){
+        Email.send({
+        Host : "smtp.elasticemail.com",
+        Username : "username",
+        Password : "password",
+        To : 'amanueltzb@gmail.com',
+        From : "you@isp.com",
+        Subject : "This is the subject",
+        Body : "And this is the body"
+      }).then(
+      message => alert(message)
+        );
+      }
 
       const dep = document.querySelectorAll('.dep');
       const selected = document.querySelector('.status');
