@@ -343,7 +343,7 @@ input[type="submit"]{
   position: relative;
 }
 
-button.apply {
+a.apply {
   padding: 10px 20px;
   border: none;
   color: #0b0b33;
@@ -354,9 +354,10 @@ button.apply {
   text-transform: uppercase;
   letter-spacing: 2px;
   background-color: #d6e8ee !important;
+  cursor: pointer;
   /* box-shadow: 0 0 16px 6px #fff; */
 }
-button.apply.float {
+a.apply.float {
     position: fixed;
     box-shadow: 0px 0px 15px 0px #0b0b33;
     right: 20px;
@@ -367,14 +368,14 @@ button.apply.float {
     border-radius: 50%;
     overflow: hidden;
 }
-button.apply.float:hover,
-button.apply:hover{
+a.apply.float:hover,
+a.apply:hover{
   box-shadow: 0 0 16px 6px #fff;
+  text-decoration: none;
 }
-button.apply.float:hover{
+a.apply.float:hover{
   width: 200px;
   height: 58px;
   border-radius: 5px;
   transition: all 0.5s ease;
-
 }
