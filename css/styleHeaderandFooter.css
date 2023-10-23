@@ -132,7 +132,7 @@ footer{
   flex-flow: column wrap;
   align-items: center;
   justify-content: end;
-  margin-top: 50px;
+  /* margin-top: 50px; */
   /* position: absolute; */
   /* bottom: 0; */
 }
