@@ -198,53 +198,10 @@
         <div class="infoContent">
           <h1>Submit<br>Documents</h1>
           <p>Please complete the form to apply for a position with us.</p>
+          <button style="background-color: #fff" class="apply">Apply Now</button>
         </div>
       </div>
-      <div class="inputs">
-        <div class="inputInfo">
-          <div>
-            <label for="firstName">First Name</label>
-            <input type="text" id="firstName" required>  
-          </div>
-          <div>
-            <label for="lastName">Last Name</label>
-            <input type="text" id="lastName" required>  
-          </div>
-          <div>
-            <label for="email">E-Mail</label>
-            <input type="email" id="email" required autocomplete="email">  
-          </div>
-          <div>
-            <label for="password">Password</label>
-            <input type="password" id="password" required>  
-          </div>
-          <div>
-            <label for="phone">Phone</label>
-            <input type="tel" id="phone" required autocomplete="mobile">  
-          </div>
-          <div class="apply">
-            <label for="status">Apply for</label>
-            <div class="status">-Select-<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-down-fill" viewBox="0 0 16 16">
-              <path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/>
-            </svg></div>
-            <ul id="status">
-              <li class="dep">Degrees</li>
-              <li class="dep">Masters</li>
-              <li class="dep">Internships</li>
-              <li class="dep">Training</li>
-            </ul>
-          </div>
-          <div>
-            <label for="file">Transcript 9-12</label>
-            <input type="file" name="transcript" accept="application/pdf" placeholder="All files must be in .pdf format">
-          </div>
-	  <div>
-            <label for="file">Passport and National ID</label>
-            <input type="file" name="id" accept="application/pdf">
-          </div>
-        </div>
-        <input type="submit" onclick="send()">
-      </div>
+
     </section>
   </main>
   <div class="blockcontent"></div>
@@ -264,7 +221,7 @@
       function send(){
         Email.send({
         Host : "smtp.gmail.com",
-        Username : "username",
+        Username : "amanueltzb@gmail.com",
         Password : "password",
         To : 'amanueltzb@gmail.com',
         From : "iamtheonlymrspy@gmail.com",

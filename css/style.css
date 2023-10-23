@@ -342,3 +342,22 @@ input[type="submit"]{
 .input[type="file"]{
   position: relative;
 }
+
+button.apply {
+  padding: 10px 20px;
+  border: none;
+  color: #0b0b33;
+  font-size: 25px;
+  font-weight: 900;
+  border-radius: 5px;
+  margin: 30px auto;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  background-color: #d6e8ee !important;
+  /* box-shadow: 0 0 16px 6px #fff; */
+}
+button.apply.float {
+    position: fixed;
+    right: 50px;
+    bottom: 10px;
+}
