@@ -6,10 +6,10 @@ echo "<pre>";
 
 echo "</pre>";
 
-  $firstName = $_POST['firstName'];
-  $lastName = $_POST['lastName'];
-  $mailFrom = $_POST['email'];
-  $pass = $_POST['password'];
+  // $firstName = $_POST['firstName'];
+  // $lastName = $_POST['lastName'];
+  // $mailFrom = $_POST['email'];
+  // $pass = $_POST['password'];
   // $firstName = $_POST['firstName'];
   // $firstName = $_POST['firstName'];
 
@@ -25,7 +25,7 @@ echo "</pre>";
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <link rel="stylesheet" href="styleForm.css">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="css/stylePhone.css">
 </head>
 <body>
   <form action="form.php" method="POST" class="inputs">
