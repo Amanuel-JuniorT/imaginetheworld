@@ -2,7 +2,6 @@
 $firstName = $_POST['firstName'];
   $lastName = $_POST['lastName'];
   $email = $_POST['email'];
-  $password = $_POST['password'];
   $phone = $_POST['phone'];
   $body = '';
 
@@ -53,11 +52,12 @@ $firstName = $_POST['firstName'];
       </div>
       <div class="apply">
         <label for="status">Apply for</label>
-        <select name="status" id="status">
-          <option value="">Hello</option>
-          <option value="">Hello</option>
-          <option value="">Hello</option>
-          <option value="">Hello</option>
+        <select name="status" id="status" required>
+          <option value="">-SELECT-</option>
+          <option value="degrees">Degrees</option>
+          <option value="masters">Masters</option>
+          <option value="internships">Internships</option>
+          <option value="training">Training</option>
         </select>
         <!-- <div class="status">-Select-<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-down-fill" viewBox="0 0 16 16">
           <path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/>
