@@ -46,56 +46,6 @@
     display: block !important;
   }
 
-    
-/*     
-  .rightNavLists{
-    display: none;
-  }
-  .rightHeader{
-    width: 40px !important;
-    height: 36px;
-    border: 2px solid #fff;
-    display: flex;
-    flex-flow: row-reverse wrap;
-    justify-content: space-between;
-  }
-
-  #menuBar{
-    visibility: visible !important;
-    display: flex;
-    flex-flow: column;
-    justify-content: space-between;
-    background: none;
-    border: none;
-    cursor: pointer;
-  }
-
-  #menuBar div.bars{
-    background-color: #fff;
-    width: 40px;
-    height: 2px;
-  }
-
-  #menuBar:hover .sideLists,
-  .sideLists:hover{
-    display: block;
-    background-color: rgb(26, 26, 93);
-    width: 400px;
-    font-size: 60px;
-    position: absolute;
-    right: 0px;
-    top: 80px;
-    z-index: 1;
-  }
-
-  .sideLists li{
-    height: 30%;
-  }
-
-  .sideLists a{
-    text-decoration: none;
-    color: #fff;
-  } */
 
   .newsSection{
     height: 1800px;
@@ -103,8 +53,6 @@
   }
   .newsContent{
     display: flex;
-    /* text-align: center; */
-    /* position: relative; */
     flex-flow: column wrap;
     justify-content: space-around;
     align-items: center;
@@ -134,9 +82,6 @@
 
 @media screen and (max-width: 952px){
  
-  /* .secondContent{
-    height: 1020px;
-  } */
   .submitSection{
     height: 480px;
     display: block;
@@ -150,7 +95,7 @@
     height: 480px;
   }
   .inputs{
-    height: 800px;
+    height: 99vh;
     display: flex;
     flex-flow: column;
     justify-content: space-between;
@@ -193,17 +138,14 @@
     font-size: 20px !important;
   }
   
-  /* .rightHeader{
-    width: 40px !important;
-  } */
-
-  
-
   .carouselContent h1{
     padding-top: 10px;
     font-size: 36px;
   }
   .carouselBlocks{
     height: 800px;
+  }
+  a.apply.float{
+    transform: scale(0.8);
   }
 }

@@ -98,7 +98,7 @@ body{
   border-radius: 5px;
   overflow: hidden;
 }
-.dep{
+.dep{ 
   padding: 10px;
 }
 .dep:hover{
