@@ -373,9 +373,3 @@ a.apply:hover{
   box-shadow: 0 0 20px 0px #fff;
   text-decoration: none;
 }
-a.apply.float:hover{
-  /* width: 200px; */
-  transform: scale(1.2);
-  border-radius: 5px;
-  transition: all 0.3s ease;
-}
