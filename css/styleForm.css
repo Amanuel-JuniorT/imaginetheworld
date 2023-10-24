@@ -63,6 +63,16 @@ body{
   height: 28px;
   background-color: rgba(255, 255, 255, 0.014);
 }
+input[type="tel"]:focus:valid,
+input[type="email"]:focus:valid
+{
+  background-color: rgba(0, 255, 0, 0.308);
+}
+input[type="tel"]:focus:invalid,
+input[type="email"]:focus:invalid
+{
+  background-color: rgba(255, 0, 0, 0.308);
+}
 
 .inputInfo input:focus, 
 .inputInfo select:focus, 
