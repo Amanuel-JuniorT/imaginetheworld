@@ -28,7 +28,7 @@ body{
   background-color: rgba(255, 255, 255, 0.793);
   padding: 0 20px;
   width: 608px;
-  height: 50px;
+  height: 550px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -65,12 +65,48 @@ body{
 }
 
 .inputInfo input:focus, 
-.inputInfo select:focus{
+.inputInfo select:focus, 
+.status.active,
+.status.active + ul{
   outline: none;
   transform: scale(1.05);
   font-size: 20px;
 
 }
+
+.status.active + ul{
+  display: block;
+}
+
+.status{
+  text-transform: uppercase;
+  font-size: 20px;
+  letter-spacing: 1px;
+  position: relative;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2px 0 2px 5px;
+}
+
+.status + ul {
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  border: 1px solid black;
+  border-radius: 5px;
+  overflow: hidden;
+}
+.dep{
+  padding: 10px;
+}
+.dep:hover{
+  background-color: rgb(51, 51, 162);
+  color: #fff;
+  cursor: pointer;
+}
+
 
 input[type="text"]{
   text-transform: capitalize;

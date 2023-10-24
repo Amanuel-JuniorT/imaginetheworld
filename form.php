@@ -1,18 +1,17 @@
 <?php
-echo "<pre>";
+$dom = new DOMDocument();
+$dom->load('./form.php');
 
-  print_r($_POST);
+  $firstName = $_POST['firstName'];
+  $lastName = $_POST['lastName'];
+  $email = $_POST['email'];
+  $password = $_POST['password'];
+  $num = $_POST['phone'];
+  echo $status = $dom->getElementById('status')->tagName;
+  
+  //$firstName = $_POST['firstName'];
 
-
-echo "</pre>";
-
-  // $firstName = $_POST['firstName'];
-  // $lastName = $_POST['lastName'];
-  // $mailFrom = $_POST['email'];
-  // $pass = $_POST['password'];
-  // $firstName = $_POST['firstName'];
-  // $firstName = $_POST['firstName'];
-
+  
 
 ?>
 
@@ -24,7 +23,7 @@ echo "</pre>";
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
-  <link rel="stylesheet" href="styleForm.css">
+  <link rel="stylesheet" href="css/styleForm.css">
   <link rel="stylesheet" href="css/stylePhone.css">
 </head>
 <body>
@@ -53,13 +52,13 @@ echo "</pre>";
       </div>
       <div class="apply">
         <label for="status">Apply for</label>
-        <select name="status" id="status">
+        <!-- <select name="status" id="status">
           <option value="">Hello</option>
           <option value="">Hello</option>
           <option value="">Hello</option>
           <option value="">Hello</option>
-        </select>
-        <!-- <div class="status">-Select-<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-down-fill" viewBox="0 0 16 16">
+        </select> -->
+        <div class="status" id="status">-Select-<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-down-fill" viewBox="0 0 16 16">
           <path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/>
         </svg></div>
         <ul id="status">
@@ -67,7 +66,7 @@ echo "</pre>";
           <li class="dep">Masters</li>
           <li class="dep">Internships</li>
           <li class="dep">Training</li>
-        </ul> -->
+        </ul>
       </div>
       <div>
         <label for="file">Transcript 9-12</label>
