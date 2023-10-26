@@ -1,4 +1,4 @@
-@font-face {
+/* @font-face {
   font-family: 'Avenir LT Std 55 Roman';
   font-size: small;
   font-style: normal;
@@ -14,29 +14,45 @@
   list-style: none;
   box-sizing: border-box;
   /* border: red dotted 1px; */
-}
+/*} */
 body{
   width: 100%;
-  height: 100vh;
+  /* height: 100vh; */
+  
+}
+main.main{
+  height: 1200px;
+  display: block;
+  background: linear-gradient(0deg, rgba(2,0,36,1) 0%, rgb(11, 11, 51) 25%, rgb(7, 45, 126) 100%);
+
+}
+
+.formContainer{
+  width: 100%;
+  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(135deg, rgba(2,0,36,1) 0%, rgb(11, 11, 51) 25%, rgb(7, 45, 126) 100%);
+
 }
 
 .inputs{
-  background-color: rgba(255, 255, 255, 0.793);
+  background-color: rgb(255, 255, 255);
   padding: 0 20px;
-  width: 608px;
-  height: 550px;
+  width: 700px;
+  height: auto;
+  padding: 30px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
+  box-shadow: 0 0 18px 0 #000;
+  border-radius: 10px;
 }
 
 .inputs>h1{
   font-size: 36px;
+  padding-bottom: 30px;
 }
 
 .inputInfo{
@@ -62,6 +78,9 @@ body{
   padding-left: 5px;
   height: 28px;
   background-color: rgba(255, 255, 255, 0.014);
+}
+input#file-upload-button{
+  opacity: 0;
 }
 input[type="tel"]:focus:valid,
 input[type="email"]:focus:valid
@@ -120,7 +139,27 @@ input[type="email"]:focus:invalid
 
 input[type="text"]{
   text-transform: capitalize;
+}
 
+div.email{
+  grid-column: span 2;
+}
+
+.pageBreaker{
+  padding-top: 20px;
+  grid-column: span 2;
+  display: block;
+  border-bottom: 3px solid rgb(11, 11, 51);
+  /* border-top: 2px dotted rgb(11, 11, 51); */
+}
+
+div.department{
+  grid-column: span 2;
+  & #department{
+    padding: 10px;
+    resize: none;
+    font-size: 24px;
+  }
 }
 
 input[type="submit"]{
