@@ -159,9 +159,53 @@ div.email{
 .pageBreaker{
   padding-top: 20px;
   grid-column: span 2;
-  display: block;
+  position: relative;
+  /* display: block; */
   border-bottom: 3px solid rgb(11, 11, 51);
   /* border-top: 2px dotted rgb(11, 11, 51); */
+  & .helpInfo{
+    position: absolute;
+    right: 22px;
+    top: 10px;
+    padding: 5px 20px;
+    border: none;
+    color: #0b0b33;
+    font-size: 18px;
+    font-weight: 700;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  & .help{
+    /* display: none; */
+    outline: 2px dotted red;
+    width: 100%;
+    background-color: rgb(137, 137, 137)
+  }
+}
+
+.help.show{
+  display: block;
+  transition: display 0.7s ease;
+}
+
+.show.helpInfo{
+  color: #fff;
+  background-color: #44bfe8;
+  box-shadow: 0 0 9px 0px #44bfe8;
+  animation: glow 1.5s infinite;
+}
+
+@keyframes glow {
+  0%{
+    box-shadow: 0 0 9px 0px #44bfe8;
+  }
+  50%{
+    box-shadow: 0 0 9px 6px #44bfe8;
+  }
+  100%{
+    box-shadow: 0 0 9px 0px #44bfe8;
+  }
+  
 }
 
 div.department{
