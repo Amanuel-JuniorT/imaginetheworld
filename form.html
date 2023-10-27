@@ -33,7 +33,7 @@
 </header>
 <main class="main">
   <div class="formContainer">
-    <form action="try2.php" method="POST" class="inputs" enctype='multipart/form-data'>
+    <form action="try22.php" method="POST" class="inputs" enctype="multipart/form-data">
       <h1>Register</h1>
       <div class="inputInfo">
         <div>
@@ -61,7 +61,7 @@
           <select name="gender" id="gender" required>
             <option>-SELECT-</option>
             <option value="Male">Male</option>
-            <option value="Female">Femail</option>
+            <option value="Female">Female</option>
           </select>
         </div>
         <div class="apply">
@@ -69,6 +69,7 @@
           <select name="status" id="status" required>
             <option>-SELECT-</option>
             <option value="Degrees">Degrees</option>
+            <option value="Associated Degrees">Associated Degrees</option>
             <option value="Masters">Masters</option>
             <option value="Internships">Internships</option>
             <option value="Training">Training</option>
@@ -92,7 +93,7 @@
         </div>
         <div>
           <label for="file">Passport</label>
-          <input type="file" name="passport" accept=".pdf" required>
+          <input type="file" name="passport" accept=".pdf">
         </div>
         <div>
           <label for="file">National ID</label>
@@ -107,7 +108,7 @@
         </div>
         <div class="department">
           <label for="department">Write the Department you want to apply for</label>
-          <textarea name="department" id="department" cols="" rows="5" placeholder="eg. -Computer Science"></textarea>
+          <textarea name="department" id="department" cols="" rows="5" placeholder="eg. -Computer Science" required></textarea>
         </div>
       </div>
       <input type="submit" name="submit">
