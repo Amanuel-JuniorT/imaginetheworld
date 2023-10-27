@@ -1,22 +1,3 @@
-<!--< ? php
-$firstName = $_POST['firstName'];
-  $lastName = $_POST['lastName'];
-  $email = $_POST['email'];
-  $phone = $_POST['phone'];
-  $body = '';
-
-  $to = "imaginetheworldorg@gmail.com";
-  $headers = "From: " . $email . "\r\n";
-  $body .= "Name: $firstName $lastName \r\n";
-  $body .= "Phone: $phone \r\n";
-  //$body .= "Name: $firstName $lastName \r\n";
-  
-  mail($to, $headers, $body);
-
-?>-->
-
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -50,36 +31,45 @@ $firstName = $_POST['firstName'];
       </ul>     
     </nav>
 </header>
-<main>
+<main class="main">
   <div class="formContainer">
-    <form action="try2.php" method="POST" class="inputs" enctype='multipart/form-data'>
+    <form action="try22.php" method="POST" class="inputs" enctype="multipart/form-data">
       <h1>Register</h1>
       <div class="inputInfo">
         <div>
-          <label for="fName">First Name</label>
-          <input type="text" id="firstName" name="fName" required>  
+          <label for="fName"  >First Name</label>
+          <input type="text" id="fName" name="fName" >  
         </div>
         <div>
-          <label for="lastName">Last Name</label>
-          <input type="text" id="lastName" name="lName" required>  
+          <label for="lastName"  >Last Name</label>
+          <input type="text" id="lastName" name="lName" >  
+        </div>
+        <div class="email">
+          <label for="email"  >E-Mail</label>
+          <input type="email" id="email" name="email"  autocomplete="email">  
         </div>
         <div>
-          <label for="email">E-Mail</label>
-          <input type="email" id="email" name="email" required autocomplete="email">  
+          <label for="dob"  >Date of Birth</label>
+          <input type="date" id="dob" name="dob"  >
         </div>
-        <!--<div>
-          <label for="password">Password</label>
-          <input type="password" id="password" name="password" required>  
-        </div> -->
         <div>
-          <label for="phone">Phone</label>
-          <input type="tel" id="phone" name="phone" pattern="[0-9]{3}[0-9]{3}[0-9]{4}" required autocomplete="mobile">  
+          <label for="phone"  >Phone</label>
+          <input type="tel" id="phone" name="phone" pattern="[0-9]{3}[0-9]{3}[0-9]{4}"   autocomplete="mobile">  
+        </div>
+        <div class="gender">
+          <label for="gender">Gender</label>
+          <select name="gender" id="gender"  >
+            <option value="">-SELECT-</option>
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+          </select>
         </div>
         <div class="apply">
           <label for="status">Apply for</label>
-          <select name="status" id="status" required>
-            <option>-SELECT-</option>
+          <select name="status" id="status"  >
+            <option value="">-SELECT-</option>
             <option value="Degrees">Degrees</option>
+            <option value="Associated Degrees">Associated Degrees</option>
             <option value="Masters">Masters</option>
             <option value="Internships">Internships</option>
             <option value="Training">Training</option>
@@ -94,20 +84,37 @@ $firstName = $_POST['firstName'];
             <li class="dep">Training</li>
           </ul> -->
         </div>
-        <div>
-          <label for="file">Transcript 9-12</label>
-          <input type="file" name="transcript" accept=".pdf" placeholder="All files must be in .pdf format">
+        <div class="pageBreaker">
+          <h2>&#x2022; Files</h2>
         </div>
         <div>
-          <label for="file">Passport and National ID</label>
-          <input type="file" name="id" accept=".pdf">
+          <label for="file">Transcript 9-12</label>
+          <input type="file" name="transcript" accept=".pdf" placeholder="All files must be in .pdf format"  >
+        </div>
+        <div>
+          <label for="file">Passport</label>
+          <input type="file" name="passport" accept=".pdf">
+        </div>
+        <div>
+          <label for="file">National/School ID</label>
+          <input type="file" name="id" accept=".pdf"  >
+        </div>
+        <div>
+          <label for="file">Transfer Receipet</label>
+          <input type="file" name="receipt" accept=".jpeg, .jpg, .webp"  >
+        </div>
+        <div class="pageBreaker">
+          <h2>&#x2022; Department</h2>
+        </div>
+        <div class="department">
+          <label for="department">Write the Department you want to apply for</label>
+          <textarea name="department" id="department" cols="" rows="5" placeholder="eg. -Computer Science"  ></textarea>
         </div>
       </div>
       <input type="submit" name="submit">
     </form>
   </div>
 </main>
-    
 <footer>
     <div class="footerContent">
       <p>IMAGINE THE WORLD</p>
