@@ -97,6 +97,10 @@
   main.main{
     height: 1800px;
   }
+
+  main.main.inlarge{
+    height: 2100px;
+  }
   .inputs{
     /* height: 100%; */
     display: flex;
