@@ -34,7 +34,7 @@
             </ul>
         </nav>
     </header>
-    <main class="main inlarge">
+    <main class="main">
         <div class="formContainer">
             <form action="try22.php" method="POST" class="inputs" enctype="multipart/form-data">
                 <h1>Register</h1>
@@ -89,7 +89,7 @@
                     </div>
                     <div class="pageBreaker">
                         <h2>&#x2022; Files</h2>
-                        <div class="help show">
+                        <div class="help">
                             <p>1. Put your transcript from 9-12 in a single pdf.
                                 <br>2. Put your front and back(if necessary) of your id in a single pdf.
                                 <br>3. If you have passport put the front and back(if necessary) of your passport in a single pdf.
@@ -97,8 +97,8 @@
                                 <br>
                                 <strong>Whom to transfer?</strong>
                             <p>Bank: Commercial Bank of Ethiopia
-                                <br>Account Holder:
-                                <br>Account Number:
+                                <br>Account Holder:Top Hill Trading PLC
+                                <br>Account Number:1000580721595
                             </p>
 
                             <p></p>
@@ -119,6 +119,10 @@
                     </div>
                     <div>
                         <label for="file">Transfer Receipt</label>
+                        <input type="file" name="receipt" accept=".jpeg, .jpg, .webp"  >
+                    </div>
+                    <div class="deg">
+                        <label for="file">Degree Certificate</label>
                         <input type="file" name="receipt" accept=".jpeg, .jpg, .webp"  >
                     </div>
                     <div class="pageBreaker">
@@ -147,6 +151,18 @@
       const show = document.querySelector('.helpInfo');
       const help = document.querySelector('.help');
       const main = document.querySelector('.main');
+      const deg = document.querySelector('.deg');
+
+      choice.addEventListener('change', ()=>{
+        if(choice.value == "Masters"){
+            deg.style.display = "block";
+            main.classList.add('inlarge');
+        }
+        else{
+            deg.style.display = "none";
+            main.classList.remove('inlarge');
+        }
+      })
       
 
       show.addEventListener('click', ()=>{
