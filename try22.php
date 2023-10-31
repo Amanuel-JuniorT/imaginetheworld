@@ -15,6 +15,12 @@
     $idfileName = $_FILES['id']['tmp_name'];
     $receiptfilenameee =  $_FILES['receipt']['name'];
     $receiptfileName = $_FILES['receipt']['tmp_name'];
+
+    if($_FILES['transcript']['error'] !== '0'){
+      header("Location: form.php?error=No Transcript");
+      exit();
+    }
+    
     
     $fname = $_POST['fName'];
     $lname = $_POST['lName'];

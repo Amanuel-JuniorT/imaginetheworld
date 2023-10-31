@@ -95,11 +95,11 @@
     height: 480px;
   }
   main.main{
-    height: 1800px;
+    height: 2100px;
   }
 
   main.main.inlarge{
-    height: 2100px;
+    height: 2200px;
   }
   .inputs{
     /* height: 100%; */

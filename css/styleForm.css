@@ -164,6 +164,13 @@ div.deg
 
 div.deg{
   display: none;
+  flex-direction: column;
+  justify-content: space-around;
+  & p{
+    margin-bottom: 10px;
+    font-size: 20px;
+    font-weight: bold;
+  }
 }
 
 .pageBreaker{
@@ -187,6 +194,18 @@ div.deg{
       padding-left: 20px;
     }
   }
+}
+
+.error:disabled{
+  width: 100%;
+  background-color: #f2dede;
+  color: #a94442;
+  border: none;
+  text-align: start;
+  font-size: 20px;
+  font-weight: bolder;
+  padding: 10px;
+  margin-bottom: 10px;
 }
 
 
